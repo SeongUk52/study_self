@@ -1,0 +1,5 @@
+C:\Users\rkfka\OneDrive\문서\GitHub\study_self\silver\obj\Debug\net5.0\silver.csproj.AssemblyReference.cache
+C:\Users\rkfka\OneDrive\문서\GitHub\study_self\silver\obj\Debug\net5.0\silver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rkfka\OneDrive\문서\GitHub\study_self\silver\obj\Debug\net5.0\silver.AssemblyInfoInputs.cache
+C:\Users\rkfka\OneDrive\문서\GitHub\study_self\silver\obj\Debug\net5.0\silver.AssemblyInfo.cs
+C:\Users\rkfka\OneDrive\문서\GitHub\study_self\silver\obj\Debug\net5.0\silver.csproj.CoreCompileInputs.cache

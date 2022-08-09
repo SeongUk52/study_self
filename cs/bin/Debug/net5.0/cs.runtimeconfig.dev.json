@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\rkfka\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\rkfka\\.nuget\\packages"
+    ]
+  }
+}
