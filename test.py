@@ -1,3 +1,3 @@
-a = 0.3 + 0.6
+a = float('infinity')
 print(a)
 

@@ -1,32 +1,36 @@
-import heapq
+from collections import deque
+# def bfs(node,end):
+#     visited = deque([node])
+#     q = deque([node,1])
+#     while q:
+#         v = q.popleft()
+#         ct = q.popleft()
+#         if(v==end):
+#             return ct
+#         ct += 1
+#         if v*2 <= end:
+#             if (visited.count(v*2)==0):
+#                 q.append(v*2)
+#                 q.append(ct)
+#                 visited.append(v*2)
+#         if v * 10 + 1 <= end:
+#             if (visited.count(v * 10 + 1)==0):
+#                 q.append(v * 10 + 1)
+#                 q.append(ct)
+#                 visited.append(v * 10 + 1)
+# result = bfs(A,B)
+# print(result if result is not None else '-1')
+
 A,B = map(int,input().split())
-INF = 1e9
-
-distance = [INF] * (B+1)
-
-def dijkstra(start,end):
-    q = []
-    heapq.heappush(q,(1,start))
-    distance[start] = 1
-
-    while q:
-        dist, now = heapq.heappop(q)
-
-        if distance[now] < dist:
-            continue
-
-        if now*2 <= end:
-            if dist+1 < distance[now*2]:
-                distance[now*2] = dist+1
-                heapq.heappush(q,(dist+1,now*2))
-
-        if now*10+1 <= end:
-            if dist+1 < distance[now*10+1]:
-                distance[now*10+1] = dist+1
-                heapq.heappush(q,(dist+1,now*10+1))
-
-dijkstra(A,B)
-if distance[-1] == INF:
-    print(-1)
-else:
-    print(distance[-1])
+cnt = 1
+while B!=A:
+    cnt += 1
+    tmp = B
+    if B%10==1:
+        B//=10
+    elif B%2==0:
+        B//=2
+    if tmp==B:
+        cnt = -1
+        break
+print(cnt)
